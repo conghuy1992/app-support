@@ -1,78 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Minesweeper Nova • Support</title>
-  <style>
-    :root{--bg:#f9f9f9;--card:#fff;--text:#222;--muted:#555;--accent:#1565c0}
-    *{box-sizing:border-box}
-    body{
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      background: var(--bg);
-      padding: 20px;max-width: 920px;margin: auto;color: var(--text);
-      -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
-    }
-    .card{background:var(--card);padding:26px;border-radius:12px;box-shadow:0 8px 24px rgba(17,24,39,.06)}
-    h1{margin:0 0 8px 0}
-    h2{color:#333;margin-top:26px}
-    p{line-height:1.65;color:var(--muted)}
-    .email{background:#eef3ff;padding:10px 12px;display:inline-block;border-radius:8px;font-weight:600;border:1px solid rgba(21,101,192,.15)}
-    ul{color:var(--muted)}
-    .divider{height:1px;background:linear-gradient(90deg,#e8e8e8,transparent);margin:28px 0}
-    .badge{display:inline-block;padding:6px 12px;border-radius:999px;background:#f3f4f6;color:#333;font-size:13px;margin-right:8px;border:1px solid #e7e7e7}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
-    code{background:#f3f4f6;padding:2px 6px;border-radius:6px;font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace}
-    .screenshot{display:flex;gap:10px;align-items:center}
-    .shot{width:120px;height:80px;border-radius:8px;background:linear-gradient(135deg,#e3f2fd,#bbdefb);display:flex;align-items:center;justify-content:center;color:#0d47a1;font-weight:700}
-  </style>
-</head>
-<body>
-  <div class="card">
-    <h1>💣 Minesweeper Nova — Support</h1>
-    <p><strong>Minesweeper Nova</strong> brings the classic minesweeper logic puzzle to modern mobile with a clean interface, four difficulty levels, and smooth controls. Reveal safe tiles, mark mines with flags, and solve boards using deduction and pattern recognition.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minesweeper: Modern Bomb • Support</title>
+    <style>
+      :root {
+        --bg: #f9f9f9;
+        --card: #fff;
+        --text: #222;
+        --muted: #555;
+        --accent: #1565c0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial;
+        background: var(--bg);
+        padding: 20px;
+        max-width: 920px;
+        margin: auto;
+        color: var(--text);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .card {
+        background: var(--card);
+        padding: 26px;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(17, 24, 39, 0.06);
+      }
+      h1 {
+        margin: 0 0 8px 0;
+      }
+      h2 {
+        color: #333;
+        margin-top: 26px;
+      }
+      p {
+        line-height: 1.65;
+        color: var(--muted);
+      }
+      .email {
+        background: #eef3ff;
+        padding: 10px 12px;
+        display: inline-block;
+        border-radius: 8px;
+        font-weight: 600;
+        border: 1px solid rgba(21, 101, 192, 0.15);
+      }
+      ul {
+        color: var(--muted);
+      }
+      .divider {
+        height: 1px;
+        background: linear-gradient(90deg, #e8e8e8, transparent);
+        margin: 28px 0;
+      }
+      .badge {
+        display: inline-block;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: #f3f4f6;
+        color: #333;
+        font-size: 13px;
+        margin-right: 8px;
+        border: 1px solid #e7e7e7;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 12px;
+      }
+      code {
+        background: #f3f4f6;
+        padding: 2px 6px;
+        border-radius: 6px;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", monospace;
+      }
+      .screenshot {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+      .shot {
+        width: 120px;
+        height: 80px;
+        border-radius: 8px;
+        background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #0d47a1;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>💣 Minesweeper: Modern Bomb — Support</h1>
+      <p>
+        <strong>Minesweeper: Modern Bomb</strong> brings the classic minesweeper
+        logic puzzle to modern mobile with a clean interface, four difficulty
+        levels, and smooth controls. Reveal safe tiles, mark mines with flags,
+        and solve boards using deduction and pattern recognition.
+      </p>
 
-    <div class="divider"></div>
+      <div class="divider"></div>
 
-    <h2>🎯 Key Features</h2>
-    <div class="grid">
-      <div><span class="badge">Difficulty</span> Beginner • Casual • Intermediate • Expert</div>
-      <div><span class="badge">Boards</span> 9×9 • 9×16 • 16×16 • 30×16</div>
-      <div><span class="badge">Gameplay</span> Classic rules, flags, flood-fill auto-open</div>
-      <div><span class="badge">Stats</span> Local best times & win counts</div>
-      <div><span class="badge">Offline</span> No account or network required</div>
-      <div><span class="badge">Accessibility</span> Large tiles, color contrast</div>
+      <h2>🎯 Key Features</h2>
+      <div class="grid">
+        <div>
+          <span class="badge">Difficulty</span> Beginner • Casual • Intermediate
+          • Expert
+        </div>
+        <div><span class="badge">Boards</span> 9×9 • 9×16 • 16×16 • 30×16</div>
+        <div>
+          <span class="badge">Gameplay</span> Classic rules, flags, flood-fill
+          auto-open
+        </div>
+        <div>
+          <span class="badge">Stats</span> Local best times & win counts
+        </div>
+        <div>
+          <span class="badge">Offline</span> No account or network required
+        </div>
+        <div>
+          <span class="badge">Accessibility</span> Large tiles, color contrast
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <h2>🕹️ How to Play</h2>
+      <p>
+        • Tap a tile to reveal it. If the tile contains a mine, the game
+        ends.<br />
+        • Numbers (1–8) show how many mines are in the 8 surrounding tiles.<br />
+        • Tap and hold to place or remove a flag on a suspected mine.<br />
+        • Revealing a tile with number 0 will automatically open connected empty
+        tiles (flood fill).
+      </p>
+
+      <h2>🛠️ Support & Feedback</h2>
+      <p>
+        If you encounter a bug, want a feature, or need help, contact the
+        developer. Please include device model, OS version, and a short
+        description or screenshot to help us reproduce the issue.
+      </p>
+      <p class="email">📧 huynhconghuy92@icloud.com</p>
+
+      <h2>📄 FAQ</h2>
+      <p>
+        <strong>Q: What are the four difficulty levels?</strong><br />A:
+        Beginner (9×9, fewer mines), Casual (12×12), Intermediate (16×16),
+        Expert (30×16, classic challenge).
+      </p>
+      <p>
+        <strong>Q: What does "flood fill" mean?</strong><br />A: If a revealed
+        tile shows 0, the game automatically opens its neighbors recursively,
+        uncovering a safe region.
+      </p>
+      <p>
+        <strong>Q: Can I see all mines after losing?</strong><br />A: Yes — when
+        you hit a mine, the board reveals all mines so you can see the layout.
+      </p>
+      <p>
+        <strong>Q: Is there a timer?</strong><br />A: Yes — each run shows a
+        timer and stores best times locally per difficulty.
+      </p>
+
+      <div class="divider"></div>
+
+      <h2>🔒 Privacy</h2>
+      <p>
+        Minesweeper: Modern Bomb stores game settings and basic stats locally.
+        The app does not require login. See the Privacy Policy in the app for
+        more details.
+      </p>
+
+      <h2>📬 Contact</h2>
+      <p>
+        Developer: <strong>Minesweeper: Modern Bomb</strong><br />
+        Email:
+        <a href="mailto:huynhconghuy92@icloud.com">huynhconghuy92@icloud.com</a
+        ><br />
+        Last updated: <strong>August 24, 2025</strong>
+      </p>
     </div>
-
-    <div class="divider"></div>
-
-    <h2>🕹️ How to Play</h2>
-    <p>
-      • Tap a tile to reveal it. If the tile contains a mine, the game ends.<br/>
-      • Numbers (1–8) show how many mines are in the 8 surrounding tiles.<br/>
-      • Tap and hold to place or remove a flag on a suspected mine.<br/>
-      • Revealing a tile with number 0 will automatically open connected empty tiles (flood fill).
-    </p>
-
-    <h2>🛠️ Support & Feedback</h2>
-    <p>If you encounter a bug, want a feature, or need help, contact the developer. Please include device model, OS version, and a short description or screenshot to help us reproduce the issue.</p>
-    <p class="email">📧 huynhconghuy92@icloud.com</p>
-
-    <h2>📄 FAQ</h2>
-    <p><strong>Q: What are the four difficulty levels?</strong><br/>A: Beginner (9×9, fewer mines), Casual (12×12), Intermediate (16×16), Expert (30×16, classic challenge).</p>
-    <p><strong>Q: What does "flood fill" mean?</strong><br/>A: If a revealed tile shows 0, the game automatically opens its neighbors recursively, uncovering a safe region.</p>
-    <p><strong>Q: Can I see all mines after losing?</strong><br/>A: Yes — when you hit a mine, the board reveals all mines so you can see the layout.</p>
-    <p><strong>Q: Is there a timer?</strong><br/>A: Yes — each run shows a timer and stores best times locally per difficulty.</p>
-
-    <div class="divider"></div>
-
-    <h2>🔒 Privacy</h2>
-    <p>Minesweeper Nova stores game settings and basic stats locally. The app does not require login. See the Privacy Policy in the app for more details.</p>
-
-    <h2>📬 Contact</h2>
-    <p>Developer: <strong>Minesweeper Nova</strong><br/>
-       Email: <a href="mailto:huynhconghuy92@icloud.com">huynhconghuy92@icloud.com</a><br/>
-       Last updated: <strong>August 24, 2025</strong></p>
-  </div>
-</body>
+  </body>
 </html>
