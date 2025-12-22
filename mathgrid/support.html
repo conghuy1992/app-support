@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Math Grid – Support</title>
+  <style>
+    :root {
+      --bg: #f9f9f9;
+      --card: #ffffff;
+      --muted: #666;
+      --accent: #4b6be6;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      color: #222;
+      -webkit-font-smoothing: antialiased;
+    }
+    header { display: flex; gap: 16px; align-items: center; }
+    .logo {
+      width: 72px;
+      height: 72px;
+      border-radius: 12px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 34px;
+      box-shadow: 0 6px 18px rgba(15,15,15,0.06);
+    }
+    h1 { margin: 0; color: #111; }
+    p.lead { color: var(--muted); margin-top: 6px; }
+
+    .card {
+      background: var(--card);
+      padding: 18px;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(15,15,15,0.05);
+      margin-top: 18px;
+    }
+    h2 { color: #222; margin-top: 0; }
+    .email {
+      background: #eef1ff;
+      padding: 10px 12px;
+      border-radius: 8px;
+      display: inline-block;
+      font-weight: 600;
+      color: var(--accent);
+    }
+    hr { border: none; border-top: 1px solid #eee; margin: 26px 0; }
+    ul { margin: 8px 0 16px 20px; }
+    .meta { font-size: 0.95em; color: var(--muted); }
+
+    footer { margin-top: 26px; font-size: 0.95em; color: var(--muted); }
+
+    @media (max-width:560px){
+      .logo { width: 56px; height: 56px; font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🧮</div>
+    <div>
+      <h1>Math Grid – Support</h1>
+      <p class="lead">
+        A smart logic-based math puzzle game where you place clues into a grid to make every calculation correct.
+      </p>
+      <p class="meta">Available on the App Store and Google Play.</p>
+    </div>
+  </header>
+
+  <div class="card">
+    <h2>About Math Grid</h2>
+    <p>
+      <strong>Math Grid</strong> is a challenging and rewarding puzzle game designed to train your logical thinking
+      and mental math skills.
+      The goal is simple: move all the clues displayed under the grid into the correct positions so that
+      every mathematical equation in the grid becomes valid.
+    </p>
+    <p>
+      The game features multiple difficulty levels —
+      <strong>Easy, Medium, Hard, and Expert</strong> —
+      making it suitable for beginners as well as experienced puzzle solvers.
+      Math Grid automatically supports <strong>light and dark mode</strong> to ensure a comfortable visual experience
+      anytime you play.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Support</h2>
+    <p>
+      If you experience any issues, discover a bug, or would like to suggest improvements,
+      please contact us using the email below:
+    </p>
+    <p class="email">📧 huynhconghuy92@icloud.com</p>
+
+    <h3 style="margin-top:14px">Helpful details to include</h3>
+    <ul>
+      <li>Your device model (e.g., iPhone, iPad, Android phone)</li>
+      <li>Operating system version (iOS / Android)</li>
+      <li>The difficulty level you were playing</li>
+      <li>A brief description of the issue</li>
+      <li>Screenshots if available</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>FAQ</h2>
+
+    <p><strong>Q: Is Math Grid free to play?</strong><br>
+    A: Yes. Math Grid is free to play. No account or personal information is required.</p>
+
+    <p><strong>Q: Do I need an internet connection?</strong><br>
+    A: No. Math Grid can be played completely offline. Your progress is saved locally on your device.</p>
+
+    <p><strong>Q: How do difficulty levels work?</strong><br>
+    A: Easy levels introduce basic logic, while Medium, Hard, and Expert levels gradually increase complexity
+    and require deeper reasoning.</p>
+
+    <p><strong>Q: Is my progress saved?</strong><br>
+    A: Yes. Completed levels and win records are saved locally so you can track your achievements.</p>
+
+    <p><strong>Q: Does Math Grid support dark mode?</strong><br>
+    A: Yes. The game automatically follows your device’s light or dark mode settings.</p>
+  </div>
+
+  <hr>
+
+  <footer>
+    <p>Thank you for playing <strong>Math Grid</strong> — sharpen your logic and enjoy solving every grid.</p>
+    <p>© Math Grid</p>
+  </footer>
+</body>
+</html>
